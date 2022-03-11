@@ -26,6 +26,7 @@ html
             if user.can('view hr')
               li.nav-item
                 a.nav-link(href="/hr") HR
+
             li.nav-item
               a.nav-link(href="/profile") Hello #{user.first_name}
           else

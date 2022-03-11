@@ -34,9 +34,5 @@ module.exports.renderSales= function(req, res){
     res.render('pages/sales');
 }
 module.exports.viewProfile = function(req, res){
-    if(!req.user.can('view profile')) {
-        res.redirect('/');
-        return;
-    }
     res.render('pages/profile');
 }
